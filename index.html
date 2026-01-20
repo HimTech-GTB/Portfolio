@@ -1,0 +1,239 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul class="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>HI, I'm <span>Himal<br> Bishwakarma</span> from Nepal</h1>
+            </div>
+        </div>
+    </div>
+   <!-- -------------------about------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        My name is Himal Bishwakarma, and I am a creative editor from Nepal
+                        with experience in videography, photography, poster design, and
+                        image editing. I enjoy transforming raw visuals into meaningful
+                        and eye-catching content that tells a clear story. For me,
+                        editing is not just about adding effects, but about improving
+                         quality, balance, and emotion` in every frame. I focus on
+                         details such as color correction, composition, lighting,
+                         and typography to make my work visually strong and professional.
+                          I enjoy creating posters and visual designs that communicate
+                          ideas clearly and attract attention at first glance. I always
+                          try to understand the purpose of a project before editing so the
+                          final result matches the vision and message. I am constantly learning
+                           new tools and techniques to improve my skills and keep up with modern
+                           design trends. My goal is to deliver creative, clean, and impactful
+                           visual content that leaves a lasting impression.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Photography</span><br>Taking High Qualiyty Images</li>
+                            <li><span>Editography</span><br>Photo Editing In Attractive UI</li>
+                            <li><span>Designer</span><br>Designing Poster and Printing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025 - current</span><br>Working as a professional</li>
+                            <li><span>2024 - 2025</span><br>Pros on Editing and Designing</li>
+                            <li><span>2022 - 2023</span><br>Learning Basic Photography </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>In 2026</span><br>Pass out NEB from Kathmandu</li>
+                            <li><span>In 2024</span><br>Pass out SEE from Surkhet</li>
+                            <li><span>In 2022</span><br>Pass out BLE from Jajarkot.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------------------services---------------->
+<div id="services">
+    <div class ="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-camera"></i>
+                <h2>Photography</h2>
+                <p>Capturing moments with creativity and precision to create stunning visuals that tell a story.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-video"></i>
+                <h2>Videography</h2>
+                <p>Producing high-quality videos that engage audiences and effectively communicate your message.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Poster Design</h2>
+                <p>Designing eye-catching posters that effectively convey your message and captivate your audience.</p>
+                <a href="#">Read More</a>
+        </div>
+    </div>
+</div>
+<!--------------------------portfolio------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="Sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/workk.jpg">
+                <div class="layer">
+                    <h3><b>Editing Images</b></h3>
+                    <p>Editing high quality and attractive images by different apps like Remini,
+                     Picsart, Lightroom etc</p>
+                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/download.jfif">
+                <div class="layer">
+                    <h3><b>Designing Posters</b></h3>
+                    <p> Designing Posters from many apps like Ms Word, Canva etc</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png">
+                <div class="layer">
+                    <h3><b>Creating Images Using AI</b></h3>
+                    <P> Creating Images using AI prompts on chatgpt, gemini image model(nano banana) etc</P>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!----------------------------contact------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>contact@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9768372939</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right"></div>
+                <form name="submit-to-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <input type="text" name="Subject" placeholder="Subject" required>
+                    <textarea name="Messages" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+             </form>
+                <span id="msg"></span>
+         </div>
+     </div>
+     <div class="copyright">
+        <p>Created By <span>Himal Bishwakarma</span> | &copy; 2024 All Rights Reserved</p>
+        
+     </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active-link");
+        }
+        for (var i = 0; i < tabcontents.length; i++) {
+            tabcontents[i].classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementsByClassName("sidemenu")[0];
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzsUqd_i6Bm-aspw9u1RYLtzia50oUJFev2XxMJKldF3GvDakX-LbYEzG-F1Lesdydt/exec'
+const form = document.forms['submit-to-sheet']
+const msg = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+
+  fetch(scriptURL, {
+    method: 'POST',
+    body: new FormData(form)
+  })
+  .then(response => {
+    msg.innerHTML = "Message sent successfully"
+    setTimeout(function(){
+        msg.innerHTML = ""
+    },5000)
+    form.reset()
+  })
+  .catch(error => {
+    msg.innerHTML = "Message not sent"
+    setTimeout(function(){
+        msg.innerHTML = ""
+    },5000)
+  })
+})
+</script>
+</body>
+</html>
